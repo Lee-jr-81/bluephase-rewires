@@ -5,7 +5,7 @@ import Spark from "../public/WhiteElectricityIcon.png";
 
 export default function IncludedSection() {
   return (
-    <section className="bg-darkAccent mt-28 md:mt-64 relative">
+    <section className="bg-realdarkAccent mt-28 md:mt-64 relative">
       <div className="bg-mediumAccent w-[250px] md:w-[400px] p-2 rounded-xl mx-auto absolute left-24 md:left-[400px] -top-8">
         <h2 className="text-white font-semibold text-lg md:text-3xl text-center">
           Whats Included In Our Rewire?
@@ -16,7 +16,6 @@ export default function IncludedSection() {
           <Image
             src={Network}
             alt="photo of media wall"
-            quality={80}
             placeholder="blur"
             className="object-cover rounded-xl"
           />

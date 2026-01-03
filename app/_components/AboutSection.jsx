@@ -1,6 +1,6 @@
 import React from "react";
 import ColouredLine from "./ColouredLine";
-import MediaWall from "../public/2dFlatMediaWall.png";
+import MediaWall from "../public/2dFlatMediawall.png";
 import Image from "next/image";
 
 export default function AboutSection() {
@@ -38,7 +38,6 @@ export default function AboutSection() {
           <Image
             src={MediaWall}
             alt="photo of media wall"
-            quality={80}
             placeholder="blur"
             className="object-cover rounded-xl"
           />

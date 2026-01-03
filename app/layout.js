@@ -1,5 +1,12 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./_components/Header";
+import { Inter } from "next/font/google";
+
+const InterFont = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 const ClashGrotesk = localFont({
   src: [
@@ -38,14 +45,17 @@ const ClashGrotesk = localFont({
 });
 
 export const metadata = {
-  title: "Bluephase Electrical",
-  description: "Electrical Rewire Company In The West Midlands",
+  title: "Bluephase Rewires",
+  description: "Domestic Rewire Specialists in the West Midlands",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${ClashGrotesk.className} antialiased bg-lightAccent`}>
+      <body
+        className={`${InterFont.variable} ${ClashGrotesk.variable} antialiased font-body`}
+      >
+        <Header />
         {children}
       </body>
     </html>
